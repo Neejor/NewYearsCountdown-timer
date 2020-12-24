@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap');
+
+body {
+  max-height: 100vh;
+  height: 100vh;
+  width: 100vw;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+
+  background-image: linear-gradient(hsl(234, 17%, 12%),hsl(235, 16%, 14%),hsl(236, 21%, 26%));
+  float: left;
+  overflow: hidden;
+
+  font-family: 'Red Hat Text', sans-serif;
+}
+
+#stars,#hills {
+  /* background-color: hsl(237, 18%, 59%); */
+  position: absolute;
+  width: 100vw;
+
+  display: block;
+}
+
+#stars {
+  width: 100vw;
+  min-height: 700px;
+}
+
+#hills {
+  left: 0;
+  bottom: 0;
+  min-height: 20%;
+}
+
+.hdr {
+  color: pink;
+  text-align: center;
+
+  font-family: 'Red Hat Text', sans-serif;
+  font-size: 10px !important;
+  letter-spacing: 2px;
+
+  margin: 100px 0;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-fluid {
+  color: white;
+  text-align: center;
+  /* height: 90%; */
+  /* max-width: 680px; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-sm-3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.tbox {
+  min-width: 130px;
+  height: 130px;
+  background-color: hsl(236, 21%, 26%);
+  border-radius: 7%;
+  box-shadow: 0 12px 6px hsl(234, 17%, 12%);
+  margin: 0 16px;
+  margin-bottom: 20px;
+
+  position: relative;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tbox::before {
+  content: "";
+  background-color: hsl(240, 21%, 22%);
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.brd1,.brd2 {
+  position: absolute;
+  border-radius: 100%;
+  width:10px; height: 10px;
+  background-color: hsl(0, 0%, 7%);
+  z-index: 7;
+}
+
+.brd1 {
+  top: 50%;
+  left: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+.brd2 {
+  top:50%;
+  right:0;
+  transform: translate(50%,-50%);
+}
+
+.hr1 {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  color: hsl(0, 0%, 6%);
+  z-index: 6;
+  margin: 0;
+}
+
+.hr2 {
+  position: absolute;
+  width: 100%;
+  top: 51%;
+  color: hsl(236, 37%, 70%);
+  z-index: 6;
+  margin: 0;
+}
+
+.col-sm-3 p {
+  position: relative;
+  z-index: 4;
+  color: hsl(237, 18%, 59%);
+  font-size: 0.8rem;
+  letter-spacing: 3px;
+}
+
+.tbox p{
+  position: relative;
+  z-index: 4;
+  color: hsl(345, 95%, 68%);
+  font-family: 'Red Hat Text', sans-serif;
+  font-size: 5em;
+  margin: 0;
+}
+
+.soc_med {
+  text-align: center;
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.soc_med a {
+  margin: 0 25px;
+  text-decoration: none;
+}
+
+@media (max-width: 575px) {
+  #stars {
+    min-height: 600px;
+    min-width: 1000px;
+  }
+
+  .hdr {
+    padding: 0 35px;
+  }
+
+  .col-sm-3 {
+    max-width: 90px;
+  }
+  .tbox {
+    min-width: 10px;
+    width: 70px;
+    height: 70px;
+  }
+
+  .col-sm-3 p {
+    font-size: 0.5rem;
+  }
+
+  .tbox p{
+    font-size: 2rem;
+  }
+}
